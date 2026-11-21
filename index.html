@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f5ef" />
+    <title>XV de Esmeralda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&family=Parisienne&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-label="Presentación">
+        <div class="botanical botanical-left" aria-hidden="true"></div>
+        <div class="botanical botanical-right" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">MIS XV AÑOS</p>
+          <h1>Esmeralda</h1>
+          <p class="date">04 <span>/</span> 03 <span>/</span> 27</p>
+          <p class="countdown-label">Cada vez más cerca</p>
+
+          <div class="countdown" aria-label="Cuenta regresiva">
+            <div class="countdown-item">
+              <strong id="days">0</strong>
+              <span>DÍAS</span>
+            </div>
+            <div class="countdown-item">
+              <strong id="hours">00</strong>
+              <span>HORAS</span>
+            </div>
+            <div class="countdown-item">
+              <strong id="minutes">00</strong>
+              <span>MINUTOS</span>
+            </div>
+            <div class="countdown-item">
+              <strong id="seconds">00</strong>
+              <span>SEGUNDOS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events" aria-labelledby="events-title">
+        <h2 id="events-title" class="sr-only">Eventos</h2>
+        <article class="event-card">
+          <div class="event-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M32 9v46M19 19h26M23 19c0 8-4 13-9 16M41 19c0 8 4 13 9 16M23 19c0 8 4 13 9 16M41 19c0 8-4 13-9 16" />
+              <path d="M13 35c7 0 12 5 12 12M51 35c-7 0-12 5-12 12" />
+            </svg>
+          </div>
+          <p class="event-kicker">CEREMONIA</p>
+          <h3>Misa</h3>
+          <time datetime="2027-04-03T15:30">3:30 pm</time>
+          <p class="venue">Parroquia de Nuestra Señora de la Esperanza</p>
+          <address>C. Alejandría 2, Fracc. Misión de Santa Sofía,<br />76908 San José de los Olvera, Qro.</address>
+          <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Parroquia+de+Nuestra+Se%C3%B1ora+de+la+Esperanza%2C+C.+Alejandr%C3%ADa+2%2C+Fracc.+Misi%C3%B3n+de+Santa+Sof%C3%ADa%2C+76908+San+Jos%C3%A9+de+los+Olvera%2C+Qro." target="_blank" rel="noopener noreferrer">Ver mapa</a>
+        </article>
+
+        <article class="event-card">
+          <div class="event-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M32 9c-8 8-12 16-12 24 0 9 5 15 12 15s12-6 12-15c0-8-4-16-12-24Z" />
+              <path d="M32 48v7M24 55h16M20 40c5 1 9 5 12 8M44 40c-5 1-9 5-12 8" />
+            </svg>
+          </div>
+          <p class="event-kicker">CELEBRACIÓN</p>
+          <h3>Fiesta</h3>
+          <time datetime="2027-04-03T18:30">6:30 pm</time>
+          <p class="venue">El Jardín de Frida</p>
+          <address>Cedro, Camino a los Olvera 910,<br />76900 Los Olvera, Qro.</address>
+          <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=El+Jard%C3%ADn+de+Frida%2C+Cedro%2C+Camino+a+los+Olvera+910%2C+76900+Los+Olvera%2C+Qro." target="_blank" rel="noopener noreferrer">Ver mapa</a>
+        </article>
+      </section>
+
+      <section class="details">
+        <div class="detail-block">
+          <p class="section-kicker">DETALLES</p>
+          <h2>Código de vestimenta</h2>
+          <p class="dress-code">Formal de jardín</p>
+          <p class="green-note">El color verde está reservado para la quinceañera.</p>
+        </div>
+
+        <div class="detail-block gifts">
+          <p class="section-kicker">TU PRESENCIA ES MI MEJOR REGALO</p>
+          <h2>Mesa de regalos</h2>
+          <p class="store">Liverpool</p>
+          <p>Número de evento</p>
+          <button class="event-number" type="button" id="copy-number" aria-label="Copiar número de evento">
+            <span id="event-number-text">60060073</span>
+            <span class="copy-label">COPIAR</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="family">
+        <div class="family-column">
+          <p class="section-kicker">MIS PAPÁS</p>
+          <p class="name">Martín R. y Carmen L.</p>
+        </div>
+        <div class="family-column">
+          <p class="section-kicker">MIS PADRINOS</p>
+          <div class="godparents">
+            <span>Noe Moisés</span>
+            <span>P.</span>
+            <span>Lilia</span>
+            <span>R.</span>
+            <span>Mercedes</span>
+            <span>R.</span>
+            <span>Luis Miguel</span>
+            <span>R.</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Gracias por acompañarme en un día tan especial para mí.<br />Tu presencia lo hace aún más bonito.</p>
+        <p class="signature">Esmeralda</p>
+      </footer>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Número copiado</div>
+    <script src="script.js"></script>
+  </body>
+</html>
